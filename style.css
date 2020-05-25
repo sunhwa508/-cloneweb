@@ -1,0 +1,102 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+p{ color:white; margin-top: 20px;}
+body{
+    background-color: #2ac1bc
+}
+
+
+header{
+    background-color: transparent;
+    position: sticky;
+    top:0;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 60px;
+}
+header .logo{
+    width: 140px;
+    float: left; 
+    cursor:pointer;
+}
+
+.icons{
+    width:100%;
+    display: absolute;
+    list-style: none;
+    top:0; right:0;
+    cursor:pointer;
+}
+.icons li{
+    float: right;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.contents{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 50px;
+    height: 100vh;
+}
+.contents p{
+    position: absolute;
+    top:46%;
+    font-weight: 200;
+}
+.content{
+    max-width: 500px;
+    position: absolute;
+    top:10%;
+}
+footer{
+    position: sticky;
+    width: 1024px;
+    margin: 0 auto;
+    bottom:20px;
+    right:0;
+}
+footer .scroll{
+    animation: scroll 0.2s infinite alternate;
+}
+.appdown{
+    float: right;
+    width: 200px;
+}
+
+.cont {
+   position: absolute;
+   bottom: 30%;right:20%;
+   transition:all 0.3 ease;
+}
+.cont img{
+    width: 400px;
+}
+
+
+@keyframes scroll{
+    from{
+        transform: translateY(20px);
+    }to{
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .icons{display:none;}
+    .appdown{display: none;}
+}
+
+@media only screen and (max-width: 770px){
+    .cont img{
+        width: 200px;
+    }
+    .img2, .img3, .img4{
+        bottom:40%;
+    }
+    .content{
+        width: 350px;
+    }
+}
