@@ -3,7 +3,7 @@ new fullpage("#fullpage", {
     navigation:true,
     onLeave:(origin,destination,direction) =>{
         const section = destination.item;
-       const img = section.querySelector(".content");
+       const img = section.querySelector(".contentimg");
        const tl = new TimelineMax({delay:0.5});
        tl.fromTo(img, 0.5, {y: '50', opacity: 0}, {y:0, opacity:1});
 
