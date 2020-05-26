@@ -35,7 +35,7 @@ new fullpage("#fullpage", {
         contimg3,
         0.3,
         { opacity: 0 },
-        { y: "200", ease: Power2.easeInOut, opacity: 1 },
+        { y: "0", ease: Power2.easeInOut, opacity: 1 },
         "-=0.5"
       );
     }
